@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MSR</title>
+</head>
+<body>
+<form>
+  <h2>Market Research Survey</h2>
+  <h6>Please take a few moments to complete this satisfaction survey</h6>
+  <hr size="1" width="100%" color="gray" style="border-color: dimgray">
+  <p>What is your age range?</p>
+  <select style="width: 200px">
+    <option>18-24</option>
+    <option>25-34</option>
+    <option>35-50</option>
+    <option>50+</option>
+  </select>
+  <p>What is your yearly income range?</p>
+  <select style="width: 200px">
+    <option>$0-$25000</option>
+    <option>$25001-$50000</option>
+    <option>$50001-$100000</option>
+    <option>$100000+</option>
+  </select>
+  <p>Gender</p>
+  <input name="gender" type="radio"> Male
+  <br>
+  <input name="gender" type="radio" > Female
+  <p>Which of the following products have you purchased in the last 2 months. Please check all that apply.</p>
+  <input type="checkbox"> Product 1
+  <br>
+  <input type="checkbox"> Product 2
+  <br>
+  <input type="checkbox"> Product 3
+  <p>How often would you use our new product?</p>
+  <input type="radio" name="often"> Daily
+  <br>
+  <input type="radio" name="often"> Weekly
+  <br>
+  <input type="radio" name="often"> Monthly
+  <p>What would you pay for the new product?</p>
+  <table style="border-collapse: collapse; border-collapse: collapse">
+    <tr>
+      <td>$</td>
+      <td><input type="text" style="width: 100px"></td>
+      <td>,</td>
+      <td><input type="text" style="width: 20px"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Dollars</td>
+      <td></td>
+      <td>Cents</td>
+    </tr>
+  </table>
+  <p>What features would you you like to see in the new product?</p>
+  <br>
+  <textarea rows="8" cols="111" style="resize: none"></textarea>
+  <p>Please rate your level of agreement with the following statements.</p>
+  <table style="border-collapse: collapse;border: 1px solid black">
+    <tr style="border: 1px solid black">
+      <th style="border: 1px solid black"></th>
+      <th style="border: 1px solid black; width: 140px">Strongly Disagree</th>
+      <th style="border: 1px solid black; width: 140px">Disagree</th>
+      <th style="border: 1px solid black; width: 140px">Agree</th>
+    </tr>
+    <tr style="border: 1px solid black">
+      <th style="border: 1px solid black">Our products are priced fairly.</th>
+      <th style="border: 1px solid black">
+        <table>
+          <tr><input type="radio" name="1"></tr>
+          <br>
+          <tr>1</tr>
+        </table>
+      </th>
+      <th style="border: 1px solid black">
+        <table>
+          <tr><input type="radio" name="1"></tr>
+          <br>
+          <tr>2</tr>
+        </table>
+      </th>
+      <th style="border: 1px solid black">
+        <table>
+          <tr><input type="radio" name="1"></tr>
+          <br>
+          <tr>3</tr>
+        </table>
+      </th>
+    </tr>
+    <tr style="border: 1px solid black">
+      <th style="border: 1px solid black">Our products are high quality.</th>
+      <th style="border: 1px solid black">
+        <table>
+          <tr><input type="radio" name="2"></tr>
+          <br>
+          <tr>1</tr>
+        </table>
+      </th>
+      <th style="border: 1px solid black">
+        <table>
+          <tr><input type="radio" name="2"></tr>
+          <br>
+          <tr>2</tr>
+        </table>
+      </th>
+      <th style="border: 1px solid black">
+        <table>
+          <tr><input type="radio" name="2"></tr>
+          <br>
+          <tr>3</tr>
+        </table>
+      </th>
+    </tr>
+    <tr style="border: 1px solid black">
+      <th style="border: 1px solid black">You would recommed our products to a friend or coworker.</th>
+      <th style="border: 1px solid black">
+        <table>
+          <tr><input type="radio" name="3"></tr>
+          <br>
+          <tr>1</tr>
+        </table>
+      </th>
+      <th style="border: 1px solid black">
+        <table>
+          <tr><input type="radio" name="3"></tr>
+          <br>
+          <tr>2</tr>
+        </table>
+      </th>
+      <th style="border: 1px solid black">
+        <table>
+          <tr><input type="radio" name="3"></tr>
+          <br>
+          <tr>3</tr>
+        </table>
+      </th>
+    </tr>
+  </table>
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>
