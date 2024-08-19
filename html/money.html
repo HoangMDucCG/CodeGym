@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Money converter</title>
+    <script src="../javascript/vndusd.js"></script>
+</head>
+<body>
+<table>
+    <tr>
+        <th><label>Amount</label></th>
+        <th></th>
+        <th><label>From Currency</label></th>
+        <th></th>
+        <th><label>To Currency</label></th>
+    </tr>
+    <tr>
+        <td><input type="number" placeholder="Nhập số tiền" id="amount"></td>
+        <th></th>
+        <td>
+            <select id="from">
+                <option value="vnd">VND</option>
+                <option value="usd">USD</option>
+            </select>
+        </td>
+        <th></th>
+        <td>
+            <select id="to">
+                <option value="usd">USD</option>
+                <option value="vnd">VND</option>
+            </select>
+        </td>
+        <th></th>
+        <td>
+            <button onclick="ChangeMoney()">Convert</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p id="result"></p>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

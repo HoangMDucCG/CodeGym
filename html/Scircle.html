@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diện tích hình tròn</title>
+</head>
+<body>
+<input type="number" placeholder="Nhập bán kính (mét)" id="r">
+<button onclick="bankinh()">Tính toán</button>
+<p id="result"></p>
+</body>
+<script>
+    function bankinh() {
+        const PI = 3.14;
+        let r = document.getElementById("r").value
+        let S = PI*r*r
+        document.getElementById("result").innerHTML = "Result: " +S +" m vuông";
+    }
+</script>
+</html>
