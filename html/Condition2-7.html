@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    alert('Phương trình bậc 2 có dạng a*x^2 + b*x + c =0 (a#0)')
+    let a = +prompt('Nhập số a')
+    let b = +prompt('Nhập số b')
+    let c = +prompt('Nhập số c')
+    if (!isNaN(a) && a !==0 && !isNaN(b) && !isNaN(c)) {
+        let denta = b*b-4*a*c
+        if (denta<0) {
+            alert('Phương trình vô nghiệm')
+        } else if (denta===0) {
+            let x=-b/2*a
+            alert(`Phương trình có nghiệm kép x=${x}`)
+        } else {
+            let x1= (-b+Math.sqrt(denta))/2*a
+            let x2= (-b-Math.sqrt(denta))/2*a
+            alert(`Phương trình có hai nghiệm phân biệt x1=${x1} và x2=${x2}`)
+        }
+    } else {
+        alert('Nhập sai giá trị, yêu cầu nhập lại')
+    }
+</script>
+</body>
+</html>

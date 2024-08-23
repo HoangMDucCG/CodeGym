@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Hãy nhập số điện đã sử dụng')
+    if (a<=50) {
+        phi = a*1806
+    } else if (a<=100) {
+        phi = (a-50)*1866+50*1806
+    } else {
+        phi = (a-100)*2167+50*1866+50*1806
+    }
+    alert(`Số tiền phải nộp của bạn là ${phi} đồng`)
+</script>
+</body>
+</html>

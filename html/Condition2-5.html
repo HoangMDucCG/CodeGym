@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Nhập độ dài cạnh  kề góc vuông của tam giác theo đơn vị mét')
+    let b = +prompt('Nhập độ dài cạnh  kề góc vuông còn lại của tam giác theo đơn vị mét')
+    if (a>0 && b>0 && !isNaN(a) && !isNaN(b)) {
+        let s = a*b/2
+        alert(`Diện tích hình tam giác bằng ${s} m^2`)
+    } else {
+        alert('Sai dữ liệu')
+    }
+</script>
+</body>
+</html>

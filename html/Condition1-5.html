@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemkt =prompt('Nhập điểm bài kiểm tra')*1;
+    let diemgk =parseFloat(prompt('Nhập điểm thi giữa kỳ'));
+    let diemck =prompt('Nhập điểm thi cuối kỳ')*1;
+    let DTB =(diemkt+diemgk+diemck)/3;
+    if (diemkt!==isNaN && diemgk!==isNaN && diemck!==isNaN && DTB>=0 && DTB<=10) {
+        if (DTB>=8) {
+            alert('Học lực giỏi')
+        } else if (DTB>=6.5) {
+            alert('Học lực khá')
+        } else if (DTB>=5) {
+            alert('Học lực trung bình')
+        } else if (DTB>=3.5) {
+            alert('Học lực yếu')
+        } else {
+            alert('Học lực kém')
+        }
+    } else {
+        alert('Lỗi nhập liệu, vui lòng kiểm tra lại')
+    }
+</script>
+</body>
+</html>

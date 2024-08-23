@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Hãy nhập số phút đã sử dụng')
+    let b = +prompt('Hãy nhập cước phí cố định')
+    if (a<=50) {
+        phi = a*600
+    } else if (a<=200) {
+        phi = (a-50)*400+50*600
+    } else {
+        phi = (a-200)*200+150*400+50*600
+    }
+    alert(`Số tiền phải nộp của bạn là ${phi+b} đồng`)
+</script>
+</body>
+</html>
+
+
+
+
+
