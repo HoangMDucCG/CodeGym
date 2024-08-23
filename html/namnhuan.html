@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thang = prompt("Nhập tháng: ") * 1
+    let nam = prompt("Nhập năm: ") *1
+    if (isNaN(thang)) {
+        alert("Nhập sai rồi, nhập lại!!!")
+    } else if (thang <= 0 || thang >12) {
+        alert("Chỉ được nhập từ 1 đến 12 thôi, nhập lại!")
+    } else {
+        switch (thang) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                alert(`Tháng ${thang} có 31 ngày !`)
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                alert(`Tháng ${thang} có 30 ngày !`)
+                break;
+            case 2:
+                if ((nam % 400 === 0 || (nam % 4 === 0 && nam % 100 !== 0)) && thang ===2) {
+                    alert('Tháng 2 có 29 ngày !')
+                } else alert('Tháng 2 có 28 ngày !')
+        }
+    }
+
+</script>
+</body>
+</html>

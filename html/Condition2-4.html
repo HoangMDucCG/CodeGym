@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Nhập độ dài cạnh dài hình chữ nhật theo đơn vị mét')
+    let b = +prompt('Nhập độ dài cạnh ngắn hình chữ nhật theo đơn vị mét')
+    if (a>0 && b>0 && a>b && !isNaN(a) && !isNaN(b)) {
+        let s = a*b
+        alert(`Diện tích hình vuông bằng ${s} m^2`)
+    } else {
+        alert('Sai dữ liệu')
+    }
+</script>
+</body>
+</html>

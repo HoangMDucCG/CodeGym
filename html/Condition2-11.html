@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Hãy nhập thu nhập của bạn theo đơn vị triệu đồng')
+    if (a<=5) {
+        phi = a*0.05
+    } else if (a<=10) {
+        phi = a*0.1-0.25
+    } else {
+        phi = a*0.15-0.75
+    }
+    alert(`Số tiền phải nộp của bạn là ${phi} triệu đồng`)
+</script>
+</body>
+</html>

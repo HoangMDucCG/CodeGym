@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Hãy nhập doanh số bán hàng (Đơn vị triệu đồng)')
+    if (a<=2) {
+        hoahong = a*0.03
+    } else if (a<=5) {
+        hoahong = a*0.06
+    } else {
+        hoahong = a * 0.1
+    }
+    alert(`Tiền hoa hồng ${hoahong} triệu đồng`)
+</script>
+</body>
+</html>

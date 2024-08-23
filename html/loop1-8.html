@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Hãy nhập khoảng lớn nhất bạn muốn đoán ')
+    let num_r=Math.floor(Math.random()*a)
+    console.log(`${num_r}`)
+    let num_ck = +prompt('Nhập số bạn đoán')
+    let count=0
+    while(num_ck !== num_r) {
+        count++
+        if (count===4) {
+            alert('Bạn đã hết lượt')
+            break;
+        } else if (num_ck > num_r) {
+            num_ck = +prompt('Số bạn đoán bé hơn, mời bạn nhập lại')
+        } else if (num_ck < num_r) {
+            num_ck = +prompt('Số bạn đoán lớn hơn, mời bạn nhập lại')
+        } else if (num_ck===num_r) {
+            alert(`Bạn đã đoán đúng, đáp án là ${num_r}`)
+            break;
+        }
+    }
+</script>
+</body>
+</html>
