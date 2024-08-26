@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count;
+    let a=1;
+    let m=2
+    let n
+    do {
+        n = +prompt('Nhập số lượng số nguyên tố')
+    } while (!(!isNaN(n) && parseInt(n) === n))
+
+    while (a<=n) {
+        count=0
+        for (let l=1; l<=m; l++) {
+            if (m % l === 0){
+                count++
+            }
+        }
+        if (count===2) {
+            console.log(m)
+            a++
+        }
+        m += 1
+    }
+</script>
+</body>
+</html>
