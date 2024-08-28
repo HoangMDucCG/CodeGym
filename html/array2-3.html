@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=[]
+    let count=0
+    let b, c
+    let d=[]
+    while (count<Number.POSITIVE_INFINITY) {
+        b = prompt('Nhập vào chuỗi')
+        a.push(b)
+        count++
+        if (count%10===0) {
+            do {
+                c= prompt('Bạn mốn dừng chưa (yes/no)')
+            } while (c !=='yes' && c!=='no')
+            if (c==='yes') {
+                break;
+            }
+        }
+    }
+    for (let i=0; i<a.length; i++) {
+        if (!isNaN(a[i])) {
+            d.push(a[i])
+        }
+    }
+    document.write(`${a} <br>`)
+    document.write(`${a.length} <br>`)
+    document.writeln(`${d} <br>`)
+    document.write(`${d.length} <br>`)
+</script>
+</body>
+</html>

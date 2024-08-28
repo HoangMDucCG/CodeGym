@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=[1,31,53,2,7,23,10,123,4,6]
+    let maxIna = Math.max.apply(Math, a)
+    let gt=0
+    document.write(`${maxIna} <br>`)
+    for (let i=0; i<a.length; i++) {
+        gt += a[i]
+    }
+    let tb=gt / a.length
+    document.write(tb)
+</script>
+</body>
+</html>

@@ -6,14 +6,16 @@
 </head>
 <body>
 <script>
+    let n = +prompt("Hãy nhập số lượng số chia hết cho 7")
     let a=0
     let b=0
-    for ( let i=0; i<30; i++) {
+    for ( let i=0; i<n; i++) {
         a+=1
         while (!(a%7===0)) {
             a+=1
         }
         b = b+a
+        console.log(a)
     }
     alert(`${b}`)
 </script>
