@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+let a=[4, 5, 6,7]
+a.push(10, 0)
+a.unshift(9)
+a.pop();
+a.shift();
+a.splice(2, 2)
+a.splice(1, 0, 3, 2)
+a[2]=1
+a.sort(function (a,b) {
+  return a - b
+})
+console.log(a)
+for (let i in a) {
+  document.writeln(a[i])
+}
+document.write('<br>')
+for (let item of a) {
+  document.writeln(item)
+}
+</script>
 </body>
 </html>

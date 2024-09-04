@@ -8,7 +8,10 @@
 <script>
     let a = 1
     let n= +prompt('Hãy nhập số bạn cần tính giai thừa');
-    for (let i=1; i<=n; i++) {
+    while (!(parseInt(n)===n && n>0 && !isNaN(n))) {
+        n= +prompt('Hãy nhập lại')
+    }
+    for (let i=n; i>=1; i--) {
         a = a * i
     }
     alert(`${a}`)
