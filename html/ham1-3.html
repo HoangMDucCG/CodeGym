@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="1" placeholder="Hãy nhập số">
+<input type="number" id="2" placeholder="Hãy nhập số">
+<br>
+<button type="button" onclick="num()">Click me</button>
+<script>
+    function num() {
+        let a = parseFloat(document.getElementById("1").value)
+        let b = parseFloat(document.getElementById("2").value)
+        let c
+        if (a>b) {
+            alert('Giá trị của tham số thứ nhất lớn hơn tham số thứ hai')
+        } else {
+            c = a+b
+            alert(c)
+        }
+    }
+</script>
+</body>
+</html>
