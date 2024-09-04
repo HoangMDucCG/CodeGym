@@ -5,11 +5,19 @@
     <title>Title</title>
 </head>
 <body>
+<p id="result"></p>
 <script>
     let a = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"]
     let b = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"]
     let c = [""]
-    c[0] = prompt('Hãy nhập eeeeen một ngooi sao')
+    c[0] = prompt('Hãy nhập tên một ngôi sao')
+    for (i=0; i<a.length; i ++) {
+        if (c[0]===a[i]) {
+            document.getElementById("result").innerText = b[i]
+            break
+        }
+        document.getElementById("result").innerText = "Không tìm thấy sao"
+    }
 </script>
 </body>
 </html>
